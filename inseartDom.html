@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert Dom Element</title>
+</head>
+<body>
+    <div class="article">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, id?
+    </div>
+    <div class="article">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, id?
+    </div>
+    <div class="article">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, id?
+    </div>
+    <ul id="item">
+        <li id="mobile">Mobile</li>
+        <li>Laptop</li>
+    </ul>
+    <script>
+        const article = document.querySelector(".article");
+        const newArticle = document.createElement("h1");
+        newArticle.innerHTML ="Writer Mohammad Rejaul karim";
+        article.appendChild(newArticle);
+
+        //one or li item added
+        const parentUl = document.getElementById("item");
+        const newTag = document.createElement('li');
+        newTag.innerHTML = "Added new item For Camera";
+        parentUl.appendChild(newTag);
+    </script>
+</body>
+</html>
